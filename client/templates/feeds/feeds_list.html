@@ -1,0 +1,19 @@
+<template name="feedsList">
+    <section class="content-inner">
+        <div class="tile-wrap wrapper">
+            {{#each posts}} {{> feedItem}} {{/each}}
+        </div>
+        {{#if nextPath}}
+        <a class="tile tile-offwhite" href="{{nextPath}}">
+        <div class="tile-inner" style="text-align:center;">
+        Load more
+        </div>
+        
+        </a>
+        
+        {{else}}  
+        
+        {{#unless ready}} {{> spinner}} {{/unless}}
+         {{/if}}
+    </section>
+</template>

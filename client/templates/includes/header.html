@@ -1,0 +1,134 @@
+<template name="header">
+    <header class="header">
+        <ul class="nav nav-list pull-left">
+            <li>
+                <a data-toggle="menu" href="#menu">
+                    <span class="icon icon-lg">menu</span>
+                </a>
+            </li>
+        </ul>
+        <a class="header-logo" href="javascript:void(0)">LetsFootball</a>
+    </header>
+    <nav class="menu" id="menu">
+        <div class="menu-scroll">
+            <div class="menu-wrap">
+                <div class="menu-content">
+                    <a class="menu-logo" href="#">LetsFootball</a>
+                    <ul class="nav">
+                        <li class="{{activeRouteClass 'home' 'topFeeds'}}">
+                            <a href="{{pathFor 'topFeeds'}}">Top News</a>
+                        </li>
+                        <li class="{{activeRouteClass 'transferFeeds'}}">
+                            <a href="{{pathFor 'transferFeeds'}}">Transfer News</a>
+                        </li>
+                        <li class="{{activeRouteClass 'analysisFeeds'}}">
+                            <a href="{{pathFor 'analysisFeeds'}}">Tactical Analysis</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="nav">
+                        <li>
+                            <a href="#">Premier League</a>
+                            <span class="menu-collapse-toggle collapsed" data-target="#epl" data-toggle="collapse">
+                                <i class="icon menu-collapse-toggle-close">close</i>
+                                <i class="icon menu-collapse-toggle-default">add</i>
+                            </span>
+                            <ul class="menu-collapse collapse" id="epl">
+                                <li class="{{activeRouteClass 'arsenalFeeds'}}">
+                                    <a href="{{pathFor 'arsenalFeeds'}}"><img src="/img/Arsenal.png">&nbsp;&nbsp;Arsenal</a>
+                                </li>
+                                <li class="{{activeRouteClass 'chelseaFeeds'}}">
+                                    <a href="{{pathFor 'chelseaFeeds'}}"><img src="/img/Chelsea.png">&nbsp;&nbsp;Chelsea</a>
+                                </li>
+                                <li class="{{activeRouteClass 'liverpoolFeeds'}}">
+                                    <a href="{{pathFor 'liverpoolFeeds'}}"><img src="/img/Liverpool.png">&nbsp;&nbsp;Liverpool</a>
+                                </li>
+                                <li class="{{activeRouteClass 'cityFeeds'}}">
+                                    <a href="{{pathFor 'cityFeeds'}}"> <img src="/img/Manchester-City.png">&nbsp;&nbsp;Manchester City</a>
+                                </li>
+                                <li class="{{activeRouteClass 'unitedFeeds'}}">
+                                    <a href="{{pathFor 'unitedFeeds'}}"> <img src="/img/Manchester-United.png">&nbsp;&nbsp;Manchester United</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="nav">
+                        <li>
+                            <a href="#">Spanish Primera División</a>
+                            <span class="menu-collapse-toggle collapsed" data-target="#llga" data-toggle="collapse">
+                                <i class="icon menu-collapse-toggle-close">close</i>
+                                <i class="icon menu-collapse-toggle-default">add</i>
+                            </span>
+                            <ul class="menu-collapse collapse" id="llga">
+                                <li class="{{activeRouteClass 'athleticoFeeds'}}">
+                                    <a href="{{pathFor 'athleticoFeeds'}}"><img src="/img/Atletico.png">&nbsp;&nbsp;Atletico Madrid</a>
+                                </li>
+                                <li class="{{activeRouteClass 'barcelonaFeeds'}}">
+                                    <a href="{{pathFor 'barcelonaFeeds'}}"><img src="/img/Barcelona.png">&nbsp;&nbsp;Barcelona</a>
+                                </li>
+                                <li class="{{activeRouteClass 'madridFeeds'}}">
+                                    <a href="{{pathFor 'madridFeeds'}}"><img src="/img/Real.png">&nbsp;&nbsp;Real Madrid</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="nav">
+                        <li>
+                            <a href="#">Italian Serie A</a>
+                            <span class="menu-collapse-toggle collapsed" data-target="#isa" data-toggle="collapse">
+                                <i class="icon menu-collapse-toggle-close">close</i>
+                                <i class="icon menu-collapse-toggle-default">add</i>
+                            </span>
+                            <ul class="menu-collapse collapse" id="isa">
+                                <li class="{{activeRouteClass 'acmilanFeeds'}}">
+                                    <a href="{{pathFor 'acmilanFeeds'}}"><img src="/img/AC-Milan.png">&nbsp;&nbsp;A.C. Milan</a>
+                                </li>
+                                <li class="{{activeRouteClass 'asromaFeeds'}}">
+                                    <a href="{{pathFor 'asromaFeeds'}}"><img src="/img/AS-Roma.png">&nbsp;&nbsp;A.S. Roma</a>
+                                </li>
+                                <li class="{{activeRouteClass 'interFeeds'}}">
+                                    <a href="{{pathFor 'interFeeds'}}"><img src="/img/Inter.png">&nbsp;&nbsp;Inter Milan</a>
+                                </li>
+                                <li class="{{activeRouteClass 'juventusFeeds'}}">
+                                    <a href="{{pathFor 'juventusFeeds'}}"><img src="/img/Juventus.png">&nbsp;&nbsp;Juventus</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="nav">
+                        <li>
+                            <a href="#">Bundesliga</a>
+                            <span class="menu-collapse-toggle collapsed" data-target="#bl" data-toggle="collapse">
+                                <i class="icon menu-collapse-toggle-close">close</i>
+                                <i class="icon menu-collapse-toggle-default">add</i>
+                            </span>
+                            <ul class="menu-collapse collapse" id="bl">
+                                <li class="{{activeRouteClass 'bayernFeeds'}}">
+                                    <a href="{{pathFor 'bayernFeeds'}}"><img src="/img/Bayern-Munchen.png">&nbsp;&nbsp;Bayern Munich</a>
+                                </li>
+                                <li class="{{activeRouteClass 'leverkusenFeeds'}}">
+                                    <a href="{{pathFor 'leverkusenFeeds'}}"><img src="/img/Bayer.png">&nbsp;&nbsp;Bayer Leverkusen</a>
+                                </li>
+                                <li class="{{activeRouteClass 'dortmundFeeds'}}">
+                                    <a href="{{pathFor 'dortmundFeeds'}}"><img src="/img/Borussia.png">&nbsp;&nbsp;Borussia Dortmund</a>
+                                </li>
+                                <li class="{{activeRouteClass 'wolfsburgFeeds'}}">
+                                    <a href="{{pathFor 'wolfsburgFeeds'}}"><img src="/img/Wolfsburg.png">&nbsp;&nbsp;Wolfsburg</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="nav">
+                        <li class="{{activeRouteClass 'uclFeeds'}}">
+                            <a href="{{pathFor 'uclFeeds'}}"> UEFA Champions League News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</template>
