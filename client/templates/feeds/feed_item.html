@@ -1,9 +1,7 @@
 <template name="feedItem">
-    <a class="tile" href="#" onclick="window.open('{{link}}', '_system');">
-        <div class="tile-inner">
-            <span>{{title}}</span> <span style="font-size:0.8em; color: green; font-style: italic; margin-left:5px;">({{domain}})
-          </span>
-            <br style="clear:both" />
+    
+       <div class="tile-inner">
+           <a class="tile" target="_blank" href="{{link}}">{{title}}</a>
         </div>
-    </a>
+    
 </template>

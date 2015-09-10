@@ -13,7 +13,7 @@ job: function() {
 	targetDate.setSeconds(0);
 
 	// Remove matchng Documents
-	Feed_Entries.remove({published: {$lt: targetDate}});
+	Feed_Entries.remove({pubdate: {$lt: targetDate}});
 }
 });
 
