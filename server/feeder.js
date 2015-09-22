@@ -191,6 +191,6 @@ function feedReader() {
 
 
 
-   // Feed.read();
+   Feed.read();
 
 }

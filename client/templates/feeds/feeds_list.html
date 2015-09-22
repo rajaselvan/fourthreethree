@@ -2,11 +2,11 @@
         <div class="block-grid-lg-3 block-grid-md-3 block-grid-sm-1">{{#each posts}} {{> feedItem}}
                 {{else}}
                 
-                <h1 class="text-center"> No posts!</h1>
+                <h1 class="text-center" style="padding-top:10%;"> No posts!</h1>
                 
                  {{/each}}</div>{{#if nextPath}}
         
-                <div class="alert alert-success text-center" role="alert">
+                <div class="alert alert-success text-center" style="display:none;" id="lmore" role="alert">
                 <a  style="font-family:'Raleway';text-decoration:none;" href="{{nextPath}}">LOAD MORE</a>
                 </div>
   
