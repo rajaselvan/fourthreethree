@@ -7,24 +7,7 @@ Meteor.publish('topnews', function(options) {
   });
   return top_news(options);
 });
-Meteor.publish('transfernews', function(options) {
-  check(options, {
-    sort: Object,
-    fields: Object,
-  	limit: Number
-  	
-  });
-  return transfer_news(options);
-});
-Meteor.publish('analysisnews', function(options) {
-  check(options, {
-    sort: Object,
-    fields: Object,
-  	limit: Number
-  	
-  });
-  return analysis_news(options);
-});
+
 Meteor.publish('arsenalnews', function(options) {
   check(options, {
     sort: Object,

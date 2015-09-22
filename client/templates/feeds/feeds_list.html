@@ -1,19 +1,13 @@
 <template name="feedsList">
-    <section class="content-inner">
-        <div class="tile-wrap wrapper">
-            {{#each posts}} {{> feedItem}} {{/each}}
-        </div>
-        {{#if nextPath}}
-        <a class="load-more" href="{{nextPath}}">
+        <div class="block-grid-lg-3 block-grid-md-3 block-grid-sm-1">{{#each posts}} {{> feedItem}}
+                {{else}}
+                
+                <h1 class="text-center"> No posts!</h1>
+                
+                 {{/each}}</div>{{#if nextPath}}
         
-        Load more
-        
-        
-        </a>
-        
-        {{else}}  
-        
-        {{#unless ready}} {{> spinner}} {{/unless}}
-         {{/if}}
-    </section>
-</template>
+                <div class="alert alert-success text-center" role="alert">
+                <a  style="font-family:'Raleway';text-decoration:none;" href="{{nextPath}}">LOAD MORE</a>
+                </div>
+  
+        {{else}} {{#unless ready}} {{> spinner}} {{/unless}} {{/if}}</template>

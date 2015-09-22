@@ -14,6 +14,7 @@ job: function() {
 
 	// Remove matchng Documents
 	Feed_Entries.remove({pubdate: {$lt: targetDate}});
+	Feed_Entries.remove({pubdate: null});
 }
 });
 

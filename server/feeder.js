@@ -27,24 +27,7 @@ function feedReader() {
 
     Feed.createRssFeed(top_feed);
 
-    var transfer_feed = {
-        _id: '2',
-        category: 'Transfer News',
-        link: 'http://pipes.yahoo.com/pipes/pipe.run?_id=0fb802b53e78e0c3266f4059705202cf&_render=rss',
-        refresh_interval: 5000
-    };
-
-    Feed.createRssFeed(transfer_feed);
-
-
-    var analysis_feed = {
-        _id: '3',
-        category: 'Analysis News',
-        link: 'http://pipes.yahoo.com/pipes/pipe.run?_id=b1ac5a6a1a4be3b7d039725cf11214d4&_render=rss',
-        refresh_interval: 5000
-    };
-
-    Feed.createRssFeed(analysis_feed);
+   
 
     var arsenal_feed = {
         _id: '4',
@@ -208,6 +191,6 @@ function feedReader() {
 
 
 
-    Feed.read();
+   // Feed.read();
 
 }

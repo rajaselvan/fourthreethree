@@ -12,3 +12,5 @@ danielqiu:feed
 percolate:synced-cron
 255kb:meteor-status
 meteorhacks:fast-render
+multiply:iron-router-progress
+jquery
